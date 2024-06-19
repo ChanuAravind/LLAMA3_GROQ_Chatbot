@@ -26,7 +26,7 @@ def submit():
         st.session_state["user_input"] = ""  # Clear the input field
 
 # Input text field with button trigger
-st.text_area("Enter your message:", key="user_input",on_change=submit)
+st.text_area("Enter your message:", key="user_input")
 st.button('Submit', on_click=submit)  
 
 # Display the current output prompt if available
